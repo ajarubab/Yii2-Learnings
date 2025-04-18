@@ -12,8 +12,10 @@ class FirstController extends Controller
    }
    
    public function actionTest(){
-        $this->layout = false;
-       return $this->render('test');
+        // $this->layout = false;
+        // return $this->render('test');
+        // OR
+       return $this->renderPartial('test');
    }
   
    public function actionDemoFirst(){
