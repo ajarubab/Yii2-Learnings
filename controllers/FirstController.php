@@ -12,6 +12,7 @@ class FirstController extends Controller
    }
    
    public function actionTest(){
+        $this->layout = false;
        return $this->render('test');
    }
   
