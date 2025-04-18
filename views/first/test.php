@@ -4,6 +4,7 @@ use yii\helpers\Html;
 
 $this->title = 'Test';
 $this->params['breadcrumbs'][] = $this->title;
+echo $name;
 ?>
 
 <div class="site-test">
@@ -13,3 +14,8 @@ $this->params['breadcrumbs'][] = $this->title;
         welcome to Test page.
     </p>
 </div>
+
+<?php
+echo "<pre>";
+print_r($list);
+?>

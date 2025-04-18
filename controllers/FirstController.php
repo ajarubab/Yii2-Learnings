@@ -15,7 +15,11 @@ class FirstController extends Controller
         // $this->layout = false;
         // return $this->render('test');
         // OR
-       return $this->renderPartial('test');
+
+        $res = [];
+        $res['name'] = "Raja kumar Prasad";
+        $res['list'] = ['Jai','Siya','Ram'];
+       return $this->renderPartial('test',$res);
    }
   
    public function actionDemoFirst(){
