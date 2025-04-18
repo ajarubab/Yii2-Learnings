@@ -10,6 +10,10 @@ class FirstController extends Controller
    public function actionIndex(){
        echo "Index File";die;
    }
+   
+   public function actionTest(){
+       return $this->render('test');
+   }
   
    public function actionDemoFirst(){
        echo "Demo First";die;
